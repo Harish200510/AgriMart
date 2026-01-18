@@ -36,7 +36,7 @@
       }
       .glass-input:focus {
         outline: none;
-        box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.4); /* green glow */
+        box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.4);
       }
       .btn-green {
         background-color: #198754;
@@ -47,10 +47,12 @@
       }
     </style>
   </head>
+
   <body>
     <!-- Glass Card Login Form -->
     <div class="glass-card text-white">
       <h2 class="fw-bold text-success mb-4">Agri Ecom</h2>
+
       <form id="loginForm" class="d-grid gap-3">
         <input
           type="text"
@@ -70,6 +72,7 @@
           Login
         </button>
       </form>
+
       <p class="mt-4 text-light">
         Don't have an account?
         <a
@@ -119,8 +122,10 @@
               return;
             }
 
+            // ✅ Store all user details for later use
             localStorage.setItem("token", data.token);
             localStorage.setItem("username", data.user.username);
+            localStorage.setItem("userId", data.user.id); // 🔥 REQUIRED for cart
             localStorage.setItem(
               "profilePic",
               data.user.profilePic || "images/profile.png"
