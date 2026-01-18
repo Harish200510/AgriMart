@@ -51,7 +51,7 @@ This project is built using **Node.js, Express.js, MongoDB, Cloudinary**, and **
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](ScreenShots/home.png)
+![Home Page](ScreenShots/Home.png)
 
 ### 🥕 Product Listing
 ![Products](ScreenShots/products.png)
